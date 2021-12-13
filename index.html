@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>BiCAPT: Bidirectional Computer-Assisted Pronunciation Training with Normalizing Flows</title>
+</head>
+<body>
+    <header>
+        <h1>BiCAPT: Bidirectional Computer-Assisted Pronunciation Training with Normalizing Flows</h1>
+        <hr>
+    </header>
+    <main>
+
+        <h2>Audio samples</h2>
+	<div></div>
+
+
+
+
+
+        <h3>HQTV_arctic_a0036</h3>
+		<div align="center">
+            <img width="591" height="176" alt=""
+              src="converted/HQTV_arctic_a0036_gt.png"><br>
+            <div  align="center"><sup>GT</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/HQTV_arctic_a0036_mel.png"><br>
+            <div  align="center"><sup>Spectrum-based</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/HQTV_arctic_a0036_latent.png"><br>
+            <div  align="center"><sup>BiCAPT</sup></div>
+	      <sup><strong>HQTV_arctic_a0036: </strong> She turned in at the hotel.</sup>
+        </div>
+	<table><thead>
+	<tr>
+		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Google TTS</th>
+		<th style="text-align: center">Glow TTS</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/HQTV_arctic_a0036_gt.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HQTV_arctic_a0036_gtts.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HQTV_arctic_a0036_regenerate.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">Spectrum-based (Monophone)</th>
+		<th style="text-align: center">Spectrum-based (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/HQTV_arctic_a0036_mel.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HQTV_arctic_a0036_mel_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">BiCAPT (Monophone)</th>
+		<th style="text-align: center">BiCAPT (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/HQTV_arctic_a0036_latent.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HQTV_arctic_a0036_latent_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	</tbody></table>
+
+        <h3>THV_arctic_a0130</h3>
+		<div align="center">
+            <img width="591" height="176" alt=""
+              src="converted/THV_arctic_a0130_gt.png"><br>
+            <div  align="center"><sup>GT</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/THV_arctic_a0130_mel.png"><br>
+            <div  align="center"><sup>Spectrum-based</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/THV_arctic_a0130_latent.png"><br>
+            <div  align="center"><sup>BiCAPT</sup></div>
+	      <sup><strong>THV_arctic_a0130: </strong> She was his now forever.</sup>
+        </div>
+	<table><thead>
+	<tr>
+		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Google TTS</th>
+		<th style="text-align: center">Glow TTS</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/THV_arctic_a0130_gt.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/THV_arctic_a0130_gtts.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/THV_arctic_a0130_regenerate.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">Spectrum-based (Monophone)</th>
+		<th style="text-align: center">Spectrum-based (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/THV_arctic_a0130_mel.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/THV_arctic_a0130_mel_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">BiCAPT (Monophone)</th>
+		<th style="text-align: center">BiCAPT (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/THV_arctic_a0130_latent.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/THV_arctic_a0130_latent_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	</tbody></table>
+
+
+        <h3>HQTV_arctic_a0099</h3>
+		<div align="center">
+            <img width="591" height="176" alt=""
+              src="converted/HQTV_arctic_a0099_gt.png"><br>
+            <div  align="center"><sup>GT</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/HQTV_arctic_a0099_mel.png"><br>
+            <div  align="center"><sup>Spectrum-based</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/HQTV_arctic_a0099_latent.png"><br>
+            <div  align="center"><sup>BiCAPT</sup></div>
+	      <sup><strong>HQTV_arctic_a0099: </strong> A maddening joy pounded in his brain.</sup>
+        </div>
+	<table><thead>
+	<tr>
+		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Google TTS</th>
+		<th style="text-align: center">Glow TTS</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/HQTV_arctic_a0099_gt.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HQTV_arctic_a0099_gtts.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HQTV_arctic_a0099_regenerate.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">Spectrum-based (Monophone)</th>
+		<th style="text-align: center">Spectrum-based (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/HQTV_arctic_a0099_mel.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HQTV_arctic_a0099_mel_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">BiCAPT (Monophone)</th>
+		<th style="text-align: center">BiCAPT (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/HQTV_arctic_a0099_latent.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HQTV_arctic_a0099_latent_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	</tbody></table>
+
+        <h3>HKK_arctic_a0123</h3>
+		<div align="center">
+            <img width="591" height="176" alt=""
+              src="converted/HKK_arctic_a0123_gt.png"><br>
+            <div  align="center"><sup>GT</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/HKK_arctic_a0123_mel.png"><br>
+            <div  align="center"><sup>Spectrum-based</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/HKK_arctic_a0123_latent.png"><br>
+            <div  align="center"><sup>BiCAPT</sup></div>
+	      <sup><strong>HKK_arctic_a0123: </strong> She had died from cold and starvation.</sup>
+        </div>
+	<table><thead>
+	<tr>
+		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Google TTS</th>
+		<th style="text-align: center">Glow TTS</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/HKK_arctic_a0123_gt.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HKK_arctic_a0123_gtts.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HKK_arctic_a0123_regenerate.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">Spectrum-based (Monophone)</th>
+		<th style="text-align: center">Spectrum-based (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/HKK_arctic_a0123_mel.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HKK_arctic_a0123_mel_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">BiCAPT (Monophone)</th>
+		<th style="text-align: center">BiCAPT (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/HKK_arctic_a0123_latent.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/HKK_arctic_a0123_latent_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	</tbody></table>
+
+
+
+
+        <h3>TLV_arctic_a0130</h3>
+		<div align="center">
+            <img width="591" height="176" alt=""
+              src="converted/TLV_arctic_a0130_gt.png"><br>
+            <div  align="center"><sup>GT</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/TLV_arctic_a0130_mel.png"><br>
+            <div  align="center"><sup>Spectrum-based</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/TLV_arctic_a0130_latent.png"><br>
+            <div  align="center"><sup>BiCAPT</sup></div>
+	      <sup><strong>TLV_arctic_a0130: </strong> She was his now forever.</sup>
+        </div>
+	<table><thead>
+	<tr>
+		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Google TTS</th>
+		<th style="text-align: center">Glow TTS</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/TLV_arctic_a0130_gt.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/TLV_arctic_a0130_gtts.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/TLV_arctic_a0130_regenerate.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">Spectrum-based (Monophone)</th>
+		<th style="text-align: center">Spectrum-based (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/TLV_arctic_a0130_mel.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/TLV_arctic_a0130_mel_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">BiCAPT (Monophone)</th>
+		<th style="text-align: center">BiCAPT (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/TLV_arctic_a0130_latent.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/TLV_arctic_a0130_latent_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	</tbody></table>
+
+
+
+
+
+        <h3>SKA_arctic_a0076</h3>
+		<div align="center">
+            <img width="591" height="176" alt=""
+              src="converted/SKA_arctic_a0076_gt.png"><br>
+            <div  align="center"><sup>GT</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/SKA_arctic_a0076_mel.png"><br>
+            <div  align="center"><sup>Spectrum-based</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/SKA_arctic_a0076_latent.png"><br>
+            <div  align="center"><sup>BiCAPT</sup></div>
+	      <sup><strong>SKA_arctic_a0076: </strong> The gray eyes faltered the flush deepened.</sup>
+        </div>
+	<table><thead>
+	<tr>
+		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Google TTS</th>
+		<th style="text-align: center">Glow TTS</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/SKA_arctic_a0076_gt.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/SKA_arctic_a0076_gtts.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/SKA_arctic_a0076_regenerate.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">Spectrum-based (Monophone)</th>
+		<th style="text-align: center">Spectrum-based (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/SKA_arctic_a0076_mel.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/SKA_arctic_a0076_mel_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">BiCAPT (Monophone)</th>
+		<th style="text-align: center">BiCAPT (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/SKA_arctic_a0076_latent.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/SKA_arctic_a0076_latent_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	</tbody></table>
+
+
+
+
+        <h3>LXC_arctic_a0089</h3>
+		<div align="center">
+            <img width="591" height="176" alt=""
+              src="converted/LXC_arctic_a0089_gt.png"><br>
+            <div  align="center"><sup>GT</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/LXC_arctic_a0089_mel.png"><br>
+            <div  align="center"><sup>Spectrum-based</sup></div>
+            <img width="591" height="176" alt=""
+              src="converted/LXC_arctic_a0089_latent.png"><br>
+            <div  align="center"><sup>BiCAPT</sup></div>
+	      <sup><strong>LXC_arctic_a0089: </strong> The night glow was treacherous to shoot by.</sup>
+        </div>
+	<table><thead>
+	<tr>
+		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Google TTS</th>
+		<th style="text-align: center">Glow TTS</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/LXC_arctic_a0089_gt.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/LXC_arctic_a0089_gtts.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/LXC_arctic_a0089_regenerate.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">Spectrum-based (Monophone)</th>
+		<th style="text-align: center">Spectrum-based (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/LXC_arctic_a0089_mel.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/LXC_arctic_a0089_mel_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	<tr>
+		<th style="text-align: center">BiCAPT (Monophone)</th>
+		<th style="text-align: center">BiCAPT (Triphone)</th>
+	</tr></thead><tbody>
+	<tr>
+                    <td><audio src="converted/LXC_arctic_a0089_latent.wav?raw=true" controls preload></audio></td>
+                    <td><audio src="converted/LXC_arctic_a0089_latent_tri.wav?raw=true" controls preload></audio></td>
+	</tr>
+
+	</tbody></table>
+
+
+
+
+
+
+    </main>
+</body>
+</html>
