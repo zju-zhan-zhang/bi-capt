@@ -2,23 +2,27 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>BiCAPT: Bidirectional Computer-Assisted Pronunciation Training with Normalizing Flows</title>
+    <title>BiCAPT: Bidirectional Computer-Assisted Pronunciation Training</title>
 </head>
 <body>
     <header>
-        <h1>BiCAPT: Bidirectional Computer-Assisted Pronunciation Training with Normalizing Flows</h1>
+        <h1>BiCAPT: Bidirectional Computer-Assisted Pronunciation Training</h1>
+		
+		<h2>An end to end style-preserved mispronunciation detection and correction system</h2>
+	<tbody><table>
+		<p>
+		Our system detect and correct the mispronunciation speech at the same time with good performance. What's more, we preserve the speech style in the correction generation process, which is better and more efficient for the CAPT systems with different accents.
+		</p>
+
+
+	</tbody></table>
+
         <hr>
     </header>
     <main>
 
-        <h2>Audio samples</h2>
+        <h4>Audio samples: HQTV_arctic_a0036</h4>
 	<div></div>
-
-
-
-
-
-        <h3>HQTV_arctic_a0036</h3>
 		<div align="center">
             <img width="591" height="176" alt=""
               src="converted/HQTV_arctic_a0036_gt.png"><br>
@@ -33,7 +37,7 @@
         </div>
 	<table><thead>
 	<tr>
-		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Raw</th>
 		<th style="text-align: center">Google TTS</th>
 		<th style="text-align: center">Glow TTS</th>
 	</tr></thead><tbody>
@@ -60,25 +64,38 @@
                     <td><audio src="converted/HQTV_arctic_a0036_latent.wav?raw=true" controls preload></audio></td>
                     <td><audio src="converted/HQTV_arctic_a0036_latent_tri.wav?raw=true" controls preload></audio></td>
 	</tr>
-
 	</tbody></table>
 
-        <h3>THV_arctic_a0130</h3>
-		<div align="center">
-            <img width="591" height="176" alt=""
-              src="converted/THV_arctic_a0130_gt.png"><br>
-            <div  align="center"><sup>GT</sup></div>
-            <img width="591" height="176" alt=""
-              src="converted/THV_arctic_a0130_mel.png"><br>
-            <div  align="center"><sup>Spectrum-based</sup></div>
-            <img width="591" height="176" alt=""
-              src="converted/THV_arctic_a0130_latent.png"><br>
-            <div  align="center"><sup>BiCAPT</sup></div>
-	      <sup><strong>THV_arctic_a0130: </strong> She was his now forever.</sup>
-        </div>
+	<h4>Conclusion</h4>
+	<tbody><table>
+		<p>
+			Raw input here is 'She turned into the hotel'. according to the ground truth, our method corrected raw input and generated the right speech 'She turned in at the hotel' with the same speech style. This example shows BiCAPT's ability to correct pronunciation while retaining raw speech style. 
+		</p>
+		<p>
+			For our method, 'Monophone' preserves more style information, making the output more natural. 'Triphone' method sacrifices some style information to achieve better correction performance( lower WER). The results of these two methods both have high qualities and show a trade-off between style information and correction performance.
+		</p>
+		<p>	
+			Compared with all other models, our method is most tiny and slim. 'Google TTS' cannot preserve raw pronunciation style. 'Glow TTS' can only unnaturally maintain partial pronunciation style. 'Spectrum-based' methods have a low quality of generation.
+		</p>
+</tbody></table>
+<hr/>
+
+	<h4>Audio samples: THV_arctic_a0130</h4>
+	<div align="center">
+		<img width="591" height="176" alt=""
+			src="converted/THV_arctic_a0130_gt.png"><br>
+		<div  align="center"><sup>GT</sup></div>
+		<img width="591" height="176" alt=""
+			src="converted/THV_arctic_a0130_mel.png"><br>
+		<div  align="center"><sup>Spectrum-based</sup></div>
+		<img width="591" height="176" alt=""
+			src="converted/THV_arctic_a0130_latent.png"><br>
+		<div  align="center"><sup>BiCAPT</sup></div>
+		<sup><strong>THV_arctic_a0130: </strong> She was his now forever.</sup>
+	</div>
 	<table><thead>
 	<tr>
-		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Raw</th>
 		<th style="text-align: center">Google TTS</th>
 		<th style="text-align: center">Glow TTS</th>
 	</tr></thead><tbody>
@@ -105,11 +122,25 @@
                     <td><audio src="converted/THV_arctic_a0130_latent.wav?raw=true" controls preload></audio></td>
                     <td><audio src="converted/THV_arctic_a0130_latent_tri.wav?raw=true" controls preload></audio></td>
 	</tr>
+	</tbody></table>
+	<h4>Conclusion</h4>
+	<tbody><table>
+		<p>
+			Raw input here is simple but not clearly in 'forever' pronouncing, our method corrected raw input and generated the right speech with the same speech style. This example shows BiCAPT's ability to correct pronunciation while retaining raw speech style. 
+		</p>
+		<p>
+			Because this example is easy, we don't need too many features to remian style. So 'Triphone' method here works better for more correction. 'Monophone' preserves more style information, which remain more input style.
+		</p>
+		<p>	
+			Compared with all other models, our method is the best. 'Google TTS' cannot preserve raw pronunciation style. 'Glow TTS' can only unnaturally maintain partial pronunciation style. 'Spectrum-based' methods have a low quality of generation.
+		</p>
+
 
 	</tbody></table>
 
+	<hr/>
 
-        <h3>HQTV_arctic_a0099</h3>
+        <h4>Audio samples: HQTV_arctic_a0099</h4>
 		<div align="center">
             <img width="591" height="176" alt=""
               src="converted/HQTV_arctic_a0099_gt.png"><br>
@@ -124,7 +155,7 @@
         </div>
 	<table><thead>
 	<tr>
-		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Raw</th>
 		<th style="text-align: center">Google TTS</th>
 		<th style="text-align: center">Glow TTS</th>
 	</tr></thead><tbody>
@@ -153,8 +184,21 @@
 	</tr>
 
 	</tbody></table>
+	<h4>Conclusion</h4>
+	<tbody><table>
+		<p>
+			Raw input speech here is not very clear and the mistake here is 'joy', our method corrected raw input and generated the right speech with the same speech style. 
+			Because this example is not very clear, more correction needed in this case. So 'Triphone' method here works better.
+		</p>
+		<p>	
+			Compared with all other models, our method is the best. 'Google TTS' cannot preserve raw pronunciation style. 'Glow TTS' can only unnaturally maintain partial pronunciation style. 'Spectrum-based' methods have a low quality of generation.
+		</p>
 
-        <h3>HKK_arctic_a0123</h3>
+	</tbody></table>
+
+	<hr/>
+
+        <h4>Audio samples: HKK_arctic_a0123</h4>
 		<div align="center">
             <img width="591" height="176" alt=""
               src="converted/HKK_arctic_a0123_gt.png"><br>
@@ -169,7 +213,7 @@
         </div>
 	<table><thead>
 	<tr>
-		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Raw</th>
 		<th style="text-align: center">Google TTS</th>
 		<th style="text-align: center">Glow TTS</th>
 	</tr></thead><tbody>
@@ -197,12 +241,25 @@
                     <td><audio src="converted/HKK_arctic_a0123_latent_tri.wav?raw=true" controls preload></audio></td>
 	</tr>
 
-	</tbody></table>
+	</tbody></table>	
+	<h4>Conclusion</h4>
+	<tbody><table>
+
+	<p>
+		Raw input speech here is simple and the pronouncing mistake here is 'cold', our method corrected raw input and generated the right speech with the same speech style. 
+		Because this example is simple, Both 'Triphone' and 'Monophone' method here works well.
+	</p>
+	<p>	
+		Compared with all other models, our method is the best. 'Google TTS' cannot preserve raw pronunciation style. 'Glow TTS' can only unnaturally maintain partial pronunciation style. 'Spectrum-based' methods have a low quality of generation.
+	</p>
+
+</tbody></table>
 
 
+<hr/>
 
 
-        <h3>TLV_arctic_a0130</h3>
+        <h4>Audio samples: TLV_arctic_a0130</h4>
 		<div align="center">
             <img width="591" height="176" alt=""
               src="converted/TLV_arctic_a0130_gt.png"><br>
@@ -217,7 +274,7 @@
         </div>
 	<table><thead>
 	<tr>
-		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Raw</th>
 		<th style="text-align: center">Google TTS</th>
 		<th style="text-align: center">Glow TTS</th>
 	</tr></thead><tbody>
@@ -246,12 +303,21 @@
 	</tr>
 
 	</tbody></table>
+	<h4>Conclusion</h4>
+	<tbody><table>
 
+	<p>
+		Raw input speech here is not very clear, our method corrected raw input and generated the right speech with the same speech style. 
+		Because this example is simple, Both 'Triphone' and 'Monophone' method here works well??? which is better.?
+	</p>
+	<p>	
+		Compared with all other models, our method is the best. 'Google TTS' cannot preserve raw pronunciation style. 'Glow TTS' can only unnaturally maintain partial pronunciation style. 'Spectrum-based' methods have a low quality of generation.
+	</p>
 
-
-
-
-        <h3>SKA_arctic_a0076</h3>
+</tbody></table>
+	
+<hr/>
+        <h4>Audio samples: SKA_arctic_a0076</h4>
 		<div align="center">
             <img width="591" height="176" alt=""
               src="converted/SKA_arctic_a0076_gt.png"><br>
@@ -266,7 +332,7 @@
         </div>
 	<table><thead>
 	<tr>
-		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Raw</th>
 		<th style="text-align: center">Google TTS</th>
 		<th style="text-align: center">Glow TTS</th>
 	</tr></thead><tbody>
@@ -295,6 +361,18 @@
 	</tr>
 
 	</tbody></table>
+	<h4>Conclusion</h4>
+	<tbody><table>
+
+	<p>
+		Raw input speech here is simple and the pronouncing mistake here is 'flush', our method corrected raw input and generated the right speech with the same speech style. 
+		Because the input speech is not good, 'Triphone' works better for more correction.
+	</p>
+	<p>	
+		Compared with all other models, our method is the best. 'Google TTS' cannot preserve raw pronunciation style. 'Glow TTS' can only unnaturally maintain partial pronunciation style. 'Spectrum-based' methods have a low quality of generation.
+	</p>
+
+</tbody></table>
 
 
 
@@ -314,7 +392,7 @@
         </div>
 	<table><thead>
 	<tr>
-		<th style="text-align: center">GT</th>
+		<th style="text-align: center">Raw</th>
 		<th style="text-align: center">Google TTS</th>
 		<th style="text-align: center">Glow TTS</th>
 	</tr></thead><tbody>
@@ -343,6 +421,18 @@
 	</tr>
 
 	</tbody></table>
+	<h4>Conclusion</h4>
+	<tbody><table>
+
+	<p>
+		Raw input speech here is simple and the pronouncing mistake here is 'shoot', our method corrected raw input and generated the right speech with the same speech style. 
+		Because this input is a bit not clear, 'Triphone' works better for more correction.
+	</p>
+	<p>	
+		Compared with all other models, our method is the best. 'Google TTS' cannot preserve raw pronunciation style. 'Glow TTS' can only unnaturally maintain partial pronunciation style. 'Spectrum-based' methods have a low quality of generation.
+	</p>
+
+</tbody></table>
 
 
 
